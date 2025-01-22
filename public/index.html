@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanzi Draw Translate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/draw.css">
+</head>
+<body>
+    <header>
+        <h1>Hanzi Draw Translate</h1>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <div id="relatedWords" class="related-words-container">
+                <h3>Related Words</h3>
+            </div>
+
+            <div class="canvas-container">
+                <canvas id="drawingCanvas"></canvas>
+                <div class="button-group">
+                    <button id="clearButton" class="primary-button">Clear</button>
+                    <button id="eraserButton" class="secondary-button">Eraser OFF</button>
+                    <button id="copyButton" class="secondary-button">Copy</button>
+                </div>
+            </div>
+
+            <div class="side-panel">
+                <div id="output" class="output-container">
+                    <p id="ocrResult" class="ocr-text"></p>
+                    <div id="translationResult" class="translation-result"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Hanzi Draw Translate.</p>
+    </footer>
+
+    <script src="/static/js/draw.js"></script>
+</body>
+</html>
